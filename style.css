@@ -1,0 +1,30 @@
+/* Кастомні стилі та оптимізація під Telegram WebApp */
+body {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Стилізація скроллбару в монохромній гамі */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 2px;
+}
+
+/* Приховати стрілочки у полів типу number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Плавний фокус */
+input:focus {
+  transition: border-color 0.2s ease-in-out;
+}
